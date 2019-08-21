@@ -1,0 +1,22 @@
+; A BIND file is a .TXT file that's used to export
+; DNS records from one domain to another. BIND
+; files are commonly used by lots of domain
+; registrars, so they're a good choice if you're
+; exporting resource records to a domain that's
+; managed by a different registrar.
+
+ideasolutionlab.com. 21600 IN SOA ns-cloud-e1.googledomains.com. cloud-dns-hostmaster.google.com. 3 21600 3600 259200 300
+ideasolutionlab.com. 21600 IN NS ns-cloud-e1.googledomains.com.
+ideasolutionlab.com. 21600 IN NS ns-cloud-e2.googledomains.com.
+ideasolutionlab.com. 21600 IN NS ns-cloud-e3.googledomains.com.
+ideasolutionlab.com. 21600 IN NS ns-cloud-e4.googledomains.com.
+ideasolutionlab.com. 3600 IN A 216.239.32.21
+ideasolutionlab.com. 3600 IN A 216.239.34.21
+ideasolutionlab.com. 3600 IN A 216.239.36.21
+ideasolutionlab.com. 3600 IN A 216.239.38.21
+ideasolutionlab.com. 3600 IN AAAA 2001:4860:4802:32::15
+ideasolutionlab.com. 3600 IN AAAA 2001:4860:4802:34::15
+ideasolutionlab.com. 3600 IN AAAA 2001:4860:4802:36::15
+ideasolutionlab.com. 3600 IN AAAA 2001:4860:4802:38::15
+_domainconnect.ideasolutionlab.com. 21600 IN CNAME connect.domains.google.com.
+www.ideasolutionlab.com. 3600 IN CNAME ghs.googlehosted.com.
